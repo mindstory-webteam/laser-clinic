@@ -27,7 +27,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--deep);
-  font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+  font-family: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -54,7 +54,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   letter-spacing: -.02em;
   margin: 0;
   color: var(--deep);
@@ -130,7 +130,7 @@ p {
 }
 
 .brand strong {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   font-size: 22px;
   display: block;
   line-height: 1.05;
@@ -245,7 +245,7 @@ p {
 }
 
 .hero h1 {
-  font-size: clamp(44px, 6vw, 76px);
+  font-size: clamp(44px, 6vw, 58px);
   line-height: 1.04;
   font-weight: 500;
   max-width: 720px;
@@ -344,7 +344,7 @@ p {
 
 .floating-card b {
   display: block;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   font-size: 18px;
 }
 
@@ -477,7 +477,7 @@ p {
 
 .years-card b {
   display: block;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   font-size: 42px;
 }
 
@@ -514,7 +514,7 @@ p {
 }
 
 .feature-grid article b {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   font-size: 21px;
   line-height: 1.2;
 }
@@ -620,7 +620,7 @@ p {
 .accordion summary {
   cursor: pointer;
   list-style: none;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   font-size: 24px;
   font-weight: 700;
   padding: 22px 0;
@@ -691,7 +691,7 @@ p {
 
 .journey-grid strong {
   display: block;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   font-size: 58px;
   font-weight: 500;
   color: rgba(200, 162, 200, .75);
@@ -1665,7 +1665,7 @@ textarea:focus {
   place-items: center;
   background: var(--gradient-cta);
   color: #fff;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Instrument Serif", serif;;
   font-size: 34px;
   font-weight: 700;
   box-shadow: var(--shadow-soft);
