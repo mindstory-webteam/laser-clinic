@@ -21,7 +21,7 @@ $blogs = [
     "title" => "Laser Treatment for Pigmentation: What to Know",
     "category" => "Laser Treatments",
     "date" => "2026-05-18",
-    "image" => "assets/images/treatments-page-banner.png",
+    "image" => "assets/images/treatment-page-banner.png",
     "excerpt" => "Understand how laser treatments can help pigmentation, marks, scars and selected cosmetic concerns.",
     "content" => "
       <p>Laser treatments use focused light energy to target selected skin concerns such as pigmentation, acne scars, tattoo marks, birth marks and other visible skin marks.</p>
