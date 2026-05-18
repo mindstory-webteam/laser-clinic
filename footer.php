@@ -15,7 +15,7 @@
         <a href="/" data-scroll="services">Services</a>
         <a href="blogs.php">Blog</a>
         <a href="/" data-scroll="doctor">Doctor</a>
-        <a href="/" data-scroll="contact">Contact</a>
+        <a href="/" data-scroll="contact">Contact Us</a>
       </div>
       <div>
         <h4>Locations</h4>

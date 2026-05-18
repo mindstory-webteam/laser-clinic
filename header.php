@@ -11,7 +11,7 @@
         <a href="/" data-scroll="services">Services</a>
         <a href="blogs.php">Blog</a>
         <a href="/" data-scroll="doctor">Doctor</a>
-        <a href="/" data-scroll="contact">Contact</a>
+        <a href="/" data-scroll="contact">Contact Us</a>
     </nav>
 
     <a class="btn btn-primary desktop-cta" href="tel:+919947488474">Book Appointment</a>
@@ -25,7 +25,7 @@
         <a href="/" data-scroll="services">Services</a>
         <a href="blogs.php">Blog</a>
         <a href="/" data-scroll="doctor">Doctor</a>
-        <a href="/" data-scroll="contact">Contact</a>
+        <a href="/" data-scroll="contact">Contact Us</a>
     <a class="btn btn-primary" href="tel:+919947488474">Book Appointment</a>
   </nav>
 </header>
