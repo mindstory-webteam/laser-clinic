@@ -996,8 +996,8 @@ textarea:focus {
 
 @media (max-width: 980px) {
 
-  .desktop-nav,
-  .desktop-cta {
+  .header-inner .desktop-nav,
+  .header-inner .desktop-cta {
     display: none !important;
   }
 
