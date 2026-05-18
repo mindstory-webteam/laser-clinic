@@ -10,12 +10,11 @@
       <div>
         <h4>Navigate</h4>        
         <a href="/">Home</a>
-        <a href="/" data-scroll="about">About</a>
+        <a href="/?scroll=about" data-scroll="about">About</a>
         <a href="/treatments">Treatments</a>
-        <a href="/" data-scroll="services">Services</a>
-        <a href="blogs.php">Blog</a>
-        <a href="/" data-scroll="doctor">Doctor</a>
-        <a href="/" data-scroll="contact">Contact Us</a>
+<a href="/?scroll=services" data-scroll="services">Services</a>        <a href="blogs.php">Blog</a>
+        <a href="/?scroll=doctor" data-scroll="doctor">Doctor</a>
+        <a href="/?scroll=contact" data-scroll="contact">Contact</a>
       </div>
       <div>
         <h4>Locations</h4>

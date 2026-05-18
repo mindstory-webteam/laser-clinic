@@ -20,12 +20,13 @@ if (menuButton && mobileNav) {
 /* Smooth scroll without showing # in URL */
 document.querySelectorAll('[data-scroll]').forEach((link) => {
   link.addEventListener('click', (event) => {
-    event.preventDefault();
-
     const sectionId = link.getAttribute('data-scroll');
     const section = document.getElementById(sectionId);
 
+    // If section exists on current page, scroll without changing page
     if (section) {
+      event.preventDefault();
+
       section.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
@@ -33,7 +34,31 @@ document.querySelectorAll('[data-scroll]').forEach((link) => {
 
       history.replaceState(null, '', window.location.pathname);
     }
+
+    // If section does not exist, let href="/?scroll=about" open home page
   });
+});
+
+/* When coming from another page, scroll after home page loads */
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const sectionId = params.get('scroll');
+
+  if (sectionId) {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      setTimeout(() => {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+
+        // Remove ?scroll=about from URL after scrolling
+        history.replaceState(null, '', window.location.pathname);
+      }, 100);
+    }
+  }
 });
 
 const year = document.getElementById('year');
