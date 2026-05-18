@@ -6,7 +6,7 @@ $blogs = [
     "title" => "Acne Scar Treatment Options: What Really Helps?",
     "category" => "Acne Care",
     "date" => "2026-05-18",
-    "image" => "assets/images/home-banner.png",
+    "image" => "assets/images/home-page-banner.png",
     "excerpt" => "A dermatologist-led guide to acne scar treatments such as peels, MNRF, lasers and combination care.",
     "content" => "
       <p>Acne scars can affect skin texture, confidence and overall skin appearance. The right treatment depends on the type of scar, scar depth, active acne status and skin type.</p>
@@ -21,7 +21,7 @@ $blogs = [
     "title" => "Laser Treatment for Pigmentation: What to Know",
     "category" => "Laser Treatments",
     "date" => "2026-05-18",
-    "image" => "assets/images/treatments-banner.png",
+    "image" => "assets/images/treatments-page-banner.png",
     "excerpt" => "Understand how laser treatments can help pigmentation, marks, scars and selected cosmetic concerns.",
     "content" => "
       <p>Laser treatments use focused light energy to target selected skin concerns such as pigmentation, acne scars, tattoo marks, birth marks and other visible skin marks.</p>
