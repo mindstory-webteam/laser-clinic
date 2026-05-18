@@ -1018,7 +1018,7 @@ textarea:focus {
 
 
   .footer-grid {
-    gap: 0;
+    gap: 0 !important;
   }
 
   .appointment-form {
