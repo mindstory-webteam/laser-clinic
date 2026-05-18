@@ -1,0 +1,30 @@
+<header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Laser Skin Clinic home">
+        <img class="brand-logo" src="assets/images/main-logo.png" alt="Laser Skin Hair & Cosmetic Clinic">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="/treatments">Treatments</a>
+        <a href="#services">Services</a>
+      <a href="blogs.php">Blog</a>
+        <a href="blogs.php">Blog</a>
+        <a href="#doctor">Doctor</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary desktop-cta" href="tel:+919947488474">Book Appointment</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="/">Home</a>
+      <a href="#about">About</a>
+      <a href="/treatments">Treatments</a>
+      <a href="#services">Services</a>
+      <a href="#doctor">Doctor</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="tel:+919947488474">Book Appointment</a>
+    </nav>
+  </header>

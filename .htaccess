@@ -1,0 +1,51 @@
+RewriteEngine On
+
+# ==================================================
+# 1. Force HTTPS
+# ==================================================
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+# ==================================================
+# 2. Redirect index.html to homepage
+# Example: /index.html -> /
+# ==================================================
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+
+# ==================================================
+# 3. Redirect .html URLs to clean URLs
+# Example: /treatments.html -> /treatments
+# ==================================================
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+
+# ==================================================
+# 4. Custom clean URLs
+# Example: /treatments -> treatments.html
+# ==================================================
+RewriteRule ^treatments/?$ treatments.html [L]
+
+
+# ==================================================
+# 5. Internally load .html files
+# Example: /about -> about.html if about.html exists
+# ==================================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+
+# ==================================================
+# 6. Protect .htaccess file
+# ==================================================
+<Files ".htaccess">
+  Require all denied
+</Files>
+
+# Blog clean URLs
+RewriteRule ^blogs/?$ blogs.php [L]
+RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog-details.php?slug=$1 [L,QSA]
