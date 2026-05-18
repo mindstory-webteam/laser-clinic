@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/index.html" aria-label="Laser Skin Clinic home">
+    <a class="brand" href="/" aria-label="Laser Skin Clinic home">
       <img class="brand-logo" src="/assets/images/main-logo.png" alt="Laser Skin Hair & Cosmetic Clinic">
     </a>
 
