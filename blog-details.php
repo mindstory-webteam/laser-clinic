@@ -54,11 +54,6 @@ if (!$currentBlog) {
           <div class="blog-content">
             <?php echo $currentBlog["content"]; ?>
           </div>
-
-          <div class="blog-detail-actions">
-            <a class="btn btn-light" href="blogs.php">Back to Blogs</a>
-            <a class="btn btn-primary" href="tel:+919947488474">Book Appointment</a>
-          </div>
         </div>
       </section>
     <?php else: ?>
