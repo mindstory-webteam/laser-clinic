@@ -29,8 +29,8 @@ if (!$currentBlog) {
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="/styles.css?v=12" />
+  <link rel="stylesheet" href="/blog.css?v=12" />
 </head>
 
 <body>
@@ -49,10 +49,15 @@ if (!$currentBlog) {
 
       <section class="section blog-detail-page">
         <div class="container narrow">
-          <img class="blog-detail-main-image" src="<?php echo htmlspecialchars($currentBlog["image"]); ?>" alt="<?php echo htmlspecialchars($currentBlog["title"]); ?>">
+          <img class="blog-detail-main-image" src="/<?php echo htmlspecialchars($currentBlog["image"]); ?>" alt="<?php echo htmlspecialchars($currentBlog["title"]); ?>">
 
           <div class="blog-content">
             <?php echo $currentBlog["content"]; ?>
+          </div>
+
+          <div class="blog-detail-actions">
+            <a class="btn btn-light" href="/blogs.php">Back to Blogs</a>
+            <a class="btn btn-primary" href="tel:+919947488474">Book Appointment</a>
           </div>
         </div>
       </section>
@@ -67,7 +72,7 @@ if (!$currentBlog) {
 
       <section class="section blog-detail-page">
         <div class="container narrow">
-          <a class="btn btn-primary" href="blogs.php">Back to Blogs</a>
+          <a class="btn btn-primary" href="/blogs.php">Back to Blogs</a>
         </div>
       </section>
     <?php endif; ?>
@@ -75,7 +80,7 @@ if (!$currentBlog) {
 
   <?php include "footer.php"; ?>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>

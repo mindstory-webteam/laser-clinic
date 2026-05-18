@@ -58,5 +58,5 @@ function find_blog_by_slug($blogs, $slug) {
 }
 
 function blog_url($slug) {
-  return "blog-details.php?slug=" . urlencode($slug);
+  return "/blog/" . urlencode($slug);
 }

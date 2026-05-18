@@ -14,8 +14,8 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="/styles.css?v=12" />
+  <link rel="stylesheet" href="/blog.css?v=12" />
 </head>
 
 <body>
@@ -25,6 +25,7 @@
   <main>
     <section class="blog-banner">
       <div class="container">
+        <span>Clinic Blog</span>
         <h1>Skin, Hair & Cosmetic Care Tips</h1>
         <p>Helpful articles about acne care, pigmentation, laser treatments, hair fall, anti-aging and skin brightening.</p>
       </div>
@@ -42,7 +43,7 @@
           <?php foreach ($blogs as $blog): ?>
             <article class="blog-card">
               <a class="blog-card-image" href="<?php echo blog_url($blog['slug']); ?>">
-                <img src="<?php echo htmlspecialchars($blog['image']); ?>" alt="<?php echo htmlspecialchars($blog['title']); ?>">
+                <img src="/<?php echo htmlspecialchars($blog['image']); ?>" alt="<?php echo htmlspecialchars($blog['title']); ?>">
               </a>
 
               <div class="blog-card-content">
@@ -72,7 +73,7 @@
 
   <?php include "footer.php"; ?>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>
