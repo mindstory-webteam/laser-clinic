@@ -1110,6 +1110,10 @@ textarea:focus {
   .hero-image-wrap {
     max-width: 360px;
   }
+
+  .accordion summary{
+    font-size: 18px;
+  }
 }
 
 /* Contact section redesigned */
