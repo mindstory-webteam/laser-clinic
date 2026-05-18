@@ -6,7 +6,7 @@ $blogs = [
     "title" => "Acne Scar Treatment Options: What Really Helps?",
     "category" => "Acne Care",
     "date" => "2026-05-18",
-    "image" => "assets/images/hero.jpg",
+    "image" => "assets/images/home-banner.png",
     "excerpt" => "A dermatologist-led guide to acne scar treatments such as peels, MNRF, lasers and combination care.",
     "content" => "
       <p>Acne scars can affect skin texture, confidence and overall skin appearance. The right treatment depends on the type of scar, scar depth, active acne status and skin type.</p>
