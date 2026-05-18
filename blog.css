@@ -19,7 +19,7 @@
 .blog-banner h1,
 .blog-detail-banner h1 {
   color: #fff;
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(42px, 6vw, 58px);
   max-width: 850px;
   margin: 12px auto 0;
 }

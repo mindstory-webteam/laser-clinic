@@ -25,7 +25,6 @@
   <main>
     <section class="blog-banner">
       <div class="container">
-        <span>Clinic Blog</span>
         <h1>Skin, Hair & Cosmetic Care Tips</h1>
         <p>Helpful articles about acne care, pigmentation, laser treatments, hair fall, anti-aging and skin brightening.</p>
       </div>
