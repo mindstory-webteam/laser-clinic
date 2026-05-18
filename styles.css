@@ -396,7 +396,7 @@ p {
   padding: 72px 0;
 }
 
-.section.about-clinic-section{
+.section.about-clinic-section {
   padding: 0 !important;
 }
 
@@ -1014,6 +1014,11 @@ textarea:focus {
   .contact-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+
+  .footer-grid {
+    gap: 0;
   }
 
   .appointment-form {
@@ -1862,7 +1867,8 @@ textarea:focus {
     padding: 18px;
   }
 }
-.floating-whatsapp svg{
+
+.floating-whatsapp svg {
   width: 40px;
   height: 40px;
 }
