@@ -5,13 +5,13 @@
     </a>
 
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="/index.html#home">Home</a>
-      <a href="/index.html#about">About</a>
-      <a href="/treatments.html">Treatments</a>
-      <a href="/index.html#services">Services</a>
-      <a href="/blogs.php">Blog</a>
-      <a href="/index.html#doctor">Doctor</a>
-      <a href="/index.html#contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/" data-scroll="about">About</a>
+        <a href="/treatments">Treatments</a>
+        <a href="/" data-scroll="services">Services</a>
+        <a href="blogs.php">Blog</a>
+        <a href="/" data-scroll="doctor">Doctor</a>
+        <a href="/" data-scroll="contact">Contact</a>
     </nav>
 
     <a class="btn btn-primary desktop-cta" href="tel:+919947488474">Book Appointment</a>
@@ -19,13 +19,13 @@
   </div>
 
   <nav class="mobile-nav" aria-label="Mobile navigation">
-    <a href="/index.html#home">Home</a>
-    <a href="/index.html#about">About</a>
-    <a href="/treatments.html">Treatments</a>
-    <a href="/index.html#services">Services</a>
-    <a href="/blogs.php">Blog</a>
-    <a href="/index.html#doctor">Doctor</a>
-    <a href="/index.html#contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/" data-scroll="about">About</a>
+        <a href="/treatments">Treatments</a>
+        <a href="/" data-scroll="services">Services</a>
+        <a href="blogs.php">Blog</a>
+        <a href="/" data-scroll="doctor">Doctor</a>
+        <a href="/" data-scroll="contact">Contact</a>
     <a class="btn btn-primary" href="tel:+919947488474">Book Appointment</a>
   </nav>
 </header>

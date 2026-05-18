@@ -8,8 +8,14 @@
         <p>Koorkenchery, Thrissur<br>☎ +91 487-244-1252<br>WhatsApp +91 99474 88474</p>
       </div>
       <div>
-        <h4>Navigate</h4><a href="/">Home</a><a href="#about">About</a><a href="/treatments">Treatments</a><a
-          href="#services">Services</a><a href="#doctor">Doctor</a><a href="#contact">Contact</a>
+        <h4>Navigate</h4>        
+        <a href="/">Home</a>
+        <a href="/" data-scroll="about">About</a>
+        <a href="/treatments">Treatments</a>
+        <a href="/" data-scroll="services">Services</a>
+        <a href="blogs.php">Blog</a>
+        <a href="/" data-scroll="doctor">Doctor</a>
+        <a href="/" data-scroll="contact">Contact</a>
       </div>
       <div>
         <h4>Locations</h4>
