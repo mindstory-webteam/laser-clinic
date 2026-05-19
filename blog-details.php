@@ -28,7 +28,7 @@ if (!$currentBlog) {
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav-icon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/fav-icon.png" />
   <link rel="stylesheet" href="/styles.css?v=12" />
   <link rel="stylesheet" href="/blog.css?v=12" />
 </head>
