@@ -16,7 +16,7 @@
         <a href="/treatments">Treatments</a>
         <a href="/blogs">Blog</a>
         <a href="/?scroll=doctor" data-scroll="doctor">Doctor</a>
-        <a href="/?scroll=contact" data-scroll="contact">Contact</a>
+        <a href="/?scroll=contact" data-scroll="contact">Contact Us</a>
       </div>
       <div>
         <h4>Locations</h4>

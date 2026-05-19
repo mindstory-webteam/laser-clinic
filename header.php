@@ -10,7 +10,7 @@
         <a href="/treatments">Treatments</a>
         <a href="/blogs">Blog</a>
         <a href="/?scroll=doctor" data-scroll="doctor">Doctor</a>
-        <a href="/?scroll=contact" data-scroll="contact">Contact</a>
+        <a href="/?scroll=contact" data-scroll="contact">Contact Us</a>
     </nav>
 
     <a class="btn btn-primary desktop-cta" href="tel:+919947488474">Book Appointment</a>
@@ -23,7 +23,7 @@
         <a href="/treatments">Treatments</a>
         <a href="/blogs">Blog</a>
         <a href="/?scroll=doctor" data-scroll="doctor">Doctor</a>
-        <a href="/?scroll=contact" data-scroll="contact">Contact</a>
+        <a href="/?scroll=contact" data-scroll="contact">Contact Us</a>
     <a class="btn btn-primary" href="tel:+919947488474">Book Appointment</a>
   </nav>
 </header>
