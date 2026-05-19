@@ -55,7 +55,6 @@ h1,
 h2,
 h3 {
   font-family: "Helvetica, Arial", sans-serif;
-  ;
   letter-spacing: -.02em;
   margin: 0;
   color: var(--deep);
@@ -132,7 +131,6 @@ p {
 
 .brand strong {
   font-family: "Helvetica, Arial", sans-serif;
-  ;
   font-size: 22px;
   display: block;
   line-height: 1.05;
@@ -347,7 +345,6 @@ p {
 .floating-card b {
   display: block;
   font-family: "Helvetica, Arial", sans-serif;
-  ;
   font-size: 18px;
 }
 
@@ -437,7 +434,7 @@ p {
 }
 
 .section-head p {
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -481,7 +478,6 @@ p {
 .years-card b {
   display: block;
   font-family: "Helvetica, Arial", sans-serif;
-  ;
   font-size: 42px;
 }
 
@@ -518,9 +514,7 @@ p {
 }
 
 .feature-grid article b {
-  font-family: "Helvetica, Arial", sans-serif;
-  ;
-  font-size: 18px;
+  font-family: "Helvetica, Arial", sans-serif;  font-size: 16px;
   line-height: 1.2;
 }
 
@@ -566,7 +560,7 @@ p {
 
 .focus-card p,
 .service-card p {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .service-card {
@@ -584,7 +578,7 @@ p {
   padding-left: 18px;
   margin: 8px 0;
   color: rgba(75, 46, 92, .82);
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .service-card li:before {
@@ -626,7 +620,6 @@ p {
   cursor: pointer;
   list-style: none;
   font-family: "Helvetica, Arial", sans-serif;
-  ;
   font-size: 24px;
   font-weight: 700;
   padding: 22px 0;
@@ -698,7 +691,6 @@ p {
 .journey-grid strong {
   display: block;
   font-family: "Helvetica, Arial", sans-serif;
-  ;
   font-size: 58px;
   font-weight: 500;
   color: rgba(200, 162, 200, .75);
@@ -1677,7 +1669,6 @@ textarea:focus {
   background: var(--gradient-cta);
   color: #fff;
   font-family: "Helvetica, Arial", sans-serif;
-  ;
   font-size: 34px;
   font-weight: 700;
   box-shadow: var(--shadow-soft);
