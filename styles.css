@@ -428,7 +428,7 @@ p {
 
 .section-head h2,
 .cta-inner h2 {
-  font-size: clamp(36px, 4vw, 58px);
+  font-size: clamp(32px, 4vw, 58px);
   font-weight: 500;
   line-height: 1.08;
 }
@@ -1063,7 +1063,7 @@ textarea:focus {
   }
 
   .hero h1 {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .hero-grid {
