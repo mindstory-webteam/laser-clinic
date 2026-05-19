@@ -245,7 +245,7 @@ p {
 }
 
 .hero h1 {
-  font-size: clamp(44px, 6vw, 58px);
+  font-size: clamp(44px, 6vw, 52px);
   line-height: 1.04;
   font-weight: 500;
   max-width: 720px;
