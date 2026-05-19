@@ -1807,7 +1807,7 @@ textarea:focus {
   .main-banner-overlay {
     background: linear-gradient(180deg,
         rgba(64, 35, 65, .93) 0%,
-        rgba(64, 35, 65, .78) 58%,
+        rgba(64, 35, 65, .78) 0%,
         rgba(64, 35, 65, .52) 100%);
   }
 
