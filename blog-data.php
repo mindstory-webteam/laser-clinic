@@ -6,7 +6,7 @@ $blogs = [
   "title" => "Benefits of Laser Hair Removal Compared to Waxing and Shaving",
   "category" => "Laser Treatments",
   "date" => "2026-05-18",
-  "image" => "assets\images\blogs\Benefits of Laser Hair Removal Compared to Waxing and Shaving.png",
+  "image" => "assets\images\blogs\Benefits of Laser Hair Removal Compared to Waxing and Shaving.webp",
   "excerpt" => "Discover why laser hair removal offers longer-lasting results, smoother skin and freedom from shaving or waxing routines.",
   "content" => "
     <p>Are you tired of shaving every few days or scheduling regular waxing appointments? Laser hair removal is a smarter, longer-lasting solution for unwanted body hair.</p>
@@ -23,7 +23,7 @@ $blogs = [
   "title" => "10 Skin Care Tips Dermatologists Recommend for Healthy, Glowing Skin",
   "category" => "Skin Care",
   "date" => "2026-05-18",
-  "image" => "assets\images\blogs\Skin Care Tips Dermatologists Recommend for Healthy, Glowing Skin.png",
+  "image" => "assets\images\blogs\Skin Care Tips Dermatologists Recommend for Healthy, Glowing Skin.webp",
   "excerpt" => "Simple dermatologist-recommended skin care habits for healthier, brighter and more balanced skin.",
   "content" => "
     <p>Healthy, glowing skin does not always need a complicated routine. The key is consistency, the right products and dermatologist-backed habits that support your skin every day.</p>
@@ -40,7 +40,7 @@ $blogs = [
   "title" => "Foods That Improve Skin and Hair Health",
   "category" => "Skin & Hair Care",
   "date" => "2026-05-18",
-  "image" => "assets\images\blogs\Foods That Improve Skin and Hair Health, Eat Your Way to a Radiant You.png",
+  "image" => "assets\images\blogs\Foods That Improve Skin and Hair Health, Eat Your Way to a Radiant You.webp",
   "excerpt" => "Learn how nutrient-rich foods can support glowing skin, stronger hair and better overall beauty from within.",
   "content" => "
     <p>Beautiful skin and strong hair start from within. While treatments and products help, your diet plays a major role in supporting skin glow, scalp health and hair strength.</p>

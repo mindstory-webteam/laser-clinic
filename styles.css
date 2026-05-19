@@ -1417,11 +1417,11 @@ textarea:focus {
 }
 
 .main-banner.treatment-page-banner {
-  background-image: url("assets/images/treatment-page-banner.png");
+  background-image: url("assets/images/treatment-page-banner.webp");
 }
 
 .main-banner.home-page-banner {
-  background-image: url("assets/images/home-page-banner.png");
+  background-image: url("assets/images/home-page-banner.webp");
 }
 
 .main-banner-overlay {
