@@ -514,7 +514,8 @@ p {
 }
 
 .feature-grid article b {
-  font-family: "Helvetica, Arial", sans-serif;  font-size: 16px;
+  font-family: "Helvetica, Arial", sans-serif;
+  font-size: 16px;
   line-height: 1.2;
 }
 
@@ -1790,6 +1791,14 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+  .main-banner.home-page-banner {
+    background-image: url("assets/images/home-page-banner-mob.webp");
+  }
+
+  .main-banner.treatment-page-banner {
+    background-image: url("assets/images/treatment-page-banner-mob.webp");
+  }
+
   .main-banner {
     min-height: 600px;
     background-position: center;
