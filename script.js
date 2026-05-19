@@ -94,7 +94,7 @@ if (form) {
       message ? `Message: ${message}` : ''
     ].filter(Boolean).join('\n');
 
-    window.open(`https://wa.me/919947488474?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    window.open(`https://wa.me/919447499116?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
     form.reset();
   });
 }
