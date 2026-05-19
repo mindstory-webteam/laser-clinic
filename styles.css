@@ -1048,7 +1048,7 @@ textarea:focus {
 
 @media (max-width: 640px) {
   .container {
-    width: min(100% - 24px, 1180px);
+    width: min(100% - 30px, 1180px);
   }
 
   .header-inner {
