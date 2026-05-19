@@ -13,7 +13,7 @@
   text-transform: uppercase;
   letter-spacing: .18em;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .blog-banner h1,
@@ -77,7 +77,7 @@
 .blog-meta span,
 .blog-meta time {
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--mauve);
   text-transform: uppercase;
   letter-spacing: .12em;
@@ -95,7 +95,7 @@
 .blog-read-more {
   display: inline-flex;
   margin-top: 12px;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--deep);
 }
 
