@@ -43,7 +43,7 @@ if (!$currentBlog) {
         <div class="container">
           <span><?php echo htmlspecialchars($currentBlog["category"]); ?></span>
           <h1><?php echo htmlspecialchars($currentBlog["title"]); ?></h1>
-          <p><?php echo htmlspecialchars($currentBlog["excerpt"]); ?></p>
+          <p><?php echo htmlspecialchars($currentBlog["date"]); ?></p>
         </div>
       </section>
 
