@@ -7,7 +7,7 @@
     </a>
         </div>
         <p>Dr. Mili Raveendran, MD, DVD<br>Dermatologist & Cosmetic Dermato Surgeon<br>Reg. No. 29407</p>
-        <p>Koorkenchery, Thrissur<br>☎ +91 487-244-1252<br>WhatsApp +91 99474 88474</p>
+        <p>Koorkenchery, Thrissur<br>☎ 0487 244 1252<br>WhatsApp +91 99474 88474</p>
       </div>
       <div>
         <h4>Navigate</h4>        
