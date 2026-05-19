@@ -14,7 +14,6 @@
         <a href="/">Home</a>
         <a href="/?scroll=about" data-scroll="about">About</a>
         <a href="/treatments">Treatments</a>
-        <a href="/?scroll=services" data-scroll="services">Services</a>        
         <a href="/blogs">Blog</a>
         <a href="/?scroll=doctor" data-scroll="doctor">Doctor</a>
         <a href="/?scroll=contact" data-scroll="contact">Contact</a>
