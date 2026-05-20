@@ -425,6 +425,7 @@ p {
   font-size: 12px;
   margin-bottom: 12px;
 }
+
 .hero h2,
 .section-head h2,
 .cta-inner h2 {
@@ -1622,43 +1623,43 @@ textarea:focus {
 }
 
 .pinned-treatment-card:nth-child(2) {
-  z-index: 4;
+  z-index: 2;
 }
 
 .pinned-treatment-card:nth-child(3) {
-  z-index: 7;
+  z-index: 3;
 }
 
 .pinned-treatment-card:nth-child(4) {
-  z-index: 10;
+  z-index: 4;
 }
 
 .pinned-treatment-card:nth-child(5) {
-  z-index: 13;
+  z-index: 5;
 }
 
 .pinned-treatment-card:nth-child(6) {
-  z-index: 16;
+  z-index: 6;
 }
 
 .pinned-treatment-card:nth-child(7) {
-  z-index: 19;
+  z-index: 7;
 }
 
 .pinned-treatment-card:nth-child(8) {
-  z-index: 21;
+  z-index: 8;
 }
 
 .pinned-treatment-card:nth-child(9) {
-  z-index: 24;
+  z-index: 9;
 }
 
 .pinned-treatment-card:nth-child(10) {
-  z-index: 27;
+  z-index: 10;
 }
 
 .pinned-treatment-card:nth-child(11) {
-  z-index: 30;
+  z-index: 11;
 }
 
 .card-count {
@@ -1745,8 +1746,8 @@ textarea:focus {
   background: #fbf7ff;
   border: 1px solid rgba(234, 223, 236, .95);
   color: var(--deep);
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .treatments-bottom-cta {
@@ -1884,6 +1885,7 @@ textarea:focus {
   width: 40px;
   height: 40px;
 }
+
 /* PRELOADER */
 #preloader {
   position: fixed;
@@ -1894,7 +1896,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   transition: transform 0.7s cubic-bezier(0.76, 0, 0.24, 1),
-              opacity 0.5s ease;
+    opacity 0.5s ease;
 }
 
 #preloader img {
@@ -1912,5 +1914,8 @@ textarea:focus {
 }
 
 @keyframes logoIn {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
