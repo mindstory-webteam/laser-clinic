@@ -116,11 +116,13 @@ function showError(message) {
     setTimeout(() => loader.remove(), 800);
   }
 
-  if (document.readyState === 'complete') {
-    setTimeout(hide, 800);
+  // Fire on DOMContentLoaded instead of window load
+  if (document.readyState !== 'loading') {
+    setTimeout(hide, 1000);
   } else {
-    window.addEventListener('load', () => setTimeout(hide, 800));
+    document.addEventListener('DOMContentLoaded', () => setTimeout(hide, 1000));
   }
 
-  setTimeout(hide, 3500); // safety fallback
+  // Hard fallback — always removes after 2.5s no matter what
+  setTimeout(hide, 2500);
 })();
