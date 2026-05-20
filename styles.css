@@ -244,12 +244,12 @@ p {
   align-items: center;
 }
 
-.hero h1 {
+/* .hero h1 {
   font-size: clamp(44px, 6vw, 52px);
   line-height: 1.04;
   font-weight: 500;
   max-width: 720px;
-}
+} */
 
 .hero p {
   font-size: 18px;
@@ -425,7 +425,7 @@ p {
   font-size: 12px;
   margin-bottom: 12px;
 }
-
+.hero h2,
 .section-head h2,
 .cta-inner h2 {
   font-size: clamp(32px, 4vw, 58px);
