@@ -104,10 +104,46 @@ function showError(message) {
 }
 
 
-// PRELOADER
+// (function () {
+//   const loader = document.getElementById('preloader');
+//   if (!loader) return;
+//   document.body.style.overflow = 'hidden';
+
+//   function hide() {
+//     loader.classList.add('hide');
+//     document.body.style.overflow = '';
+//     setTimeout(() => loader.remove(), 800);
+//   }
+
+//   if (document.readyState !== 'loading') {
+//     setTimeout(hide, 1000);
+//   } else {
+//     document.addEventListener('DOMContentLoaded', () => setTimeout(hide, 1000));
+//   }
+
+//   setTimeout(hide, 2500);
+// })();
+// PRELOADER — only on first load / reload, not page transitions
 (function () {
   const loader = document.getElementById('preloader');
   if (!loader) return;
+
+  // If navigating via back/forward or internal link, skip preloader
+  const navEntry = performance.getEntriesByType('navigation')[0];
+  const isReload = navEntry ? navEntry.type === 'reload' || navEntry.type === 'navigate' : true;
+
+  if (!isReload) {
+    loader.remove();
+    return;
+  }
+
+  // Check if already visited this session
+  if (sessionStorage.getItem('visited')) {
+    loader.remove();
+    return;
+  }
+
+  sessionStorage.setItem('visited', '1');
   document.body.style.overflow = 'hidden';
 
   function hide() {
@@ -116,13 +152,11 @@ function showError(message) {
     setTimeout(() => loader.remove(), 800);
   }
 
-  // Fire on DOMContentLoaded instead of window load
   if (document.readyState !== 'loading') {
     setTimeout(hide, 1000);
   } else {
     document.addEventListener('DOMContentLoaded', () => setTimeout(hide, 1000));
   }
 
-  // Hard fallback — always removes after 2.5s no matter what
   setTimeout(hide, 2500);
 })();
