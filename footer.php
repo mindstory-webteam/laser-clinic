@@ -21,7 +21,7 @@
       <div>
         <h4>Locations</h4>
         <p><b>Sun City Complex</b><br>Koorkenchery, Thrissur 680007</p>
-        <p><b>Ayyanthole Clinic</b><br>Thrissur · 0487 2381025</p>
+        <p><b>Ayyanthole Clinic</b><br>Thrissur · 0487 238 1025</p>
       </div>
     </div>
     <div class="container footer-bottom">
