@@ -1622,43 +1622,43 @@ textarea:focus {
 }
 
 .pinned-treatment-card:nth-child(2) {
-  z-index: 2;
-}
-
-.pinned-treatment-card:nth-child(3) {
-  z-index: 3;
-}
-
-.pinned-treatment-card:nth-child(4) {
   z-index: 4;
 }
 
-.pinned-treatment-card:nth-child(5) {
-  z-index: 5;
-}
-
-.pinned-treatment-card:nth-child(6) {
-  z-index: 6;
-}
-
-.pinned-treatment-card:nth-child(7) {
+.pinned-treatment-card:nth-child(3) {
   z-index: 7;
 }
 
-.pinned-treatment-card:nth-child(8) {
-  z-index: 8;
-}
-
-.pinned-treatment-card:nth-child(9) {
-  z-index: 9;
-}
-
-.pinned-treatment-card:nth-child(10) {
+.pinned-treatment-card:nth-child(4) {
   z-index: 10;
 }
 
+.pinned-treatment-card:nth-child(5) {
+  z-index: 13;
+}
+
+.pinned-treatment-card:nth-child(6) {
+  z-index: 16;
+}
+
+.pinned-treatment-card:nth-child(7) {
+  z-index: 19;
+}
+
+.pinned-treatment-card:nth-child(8) {
+  z-index: 21;
+}
+
+.pinned-treatment-card:nth-child(9) {
+  z-index: 24;
+}
+
+.pinned-treatment-card:nth-child(10) {
+  z-index: 27;
+}
+
 .pinned-treatment-card:nth-child(11) {
-  z-index: 11;
+  z-index: 30;
 }
 
 .card-count {
