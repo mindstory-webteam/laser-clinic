@@ -102,3 +102,25 @@ if (form) {
 function showError(message) {
   if (error) error.textContent = message;
 }
+
+
+// PRELOADER
+(function () {
+  const loader = document.getElementById('preloader');
+  if (!loader) return;
+  document.body.style.overflow = 'hidden';
+
+  function hide() {
+    loader.classList.add('hide');
+    document.body.style.overflow = '';
+    setTimeout(() => loader.remove(), 800);
+  }
+
+  if (document.readyState === 'complete') {
+    setTimeout(hide, 800);
+  } else {
+    window.addEventListener('load', () => setTimeout(hide, 800));
+  }
+
+  setTimeout(hide, 3500); // safety fallback
+})();

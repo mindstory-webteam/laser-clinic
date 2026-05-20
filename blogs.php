@@ -19,6 +19,11 @@
 </head>
 
 <body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <img src="assets/images/main-logo-inverse.webp" alt="Laser Skin Hair & Cosmetic Clinic" />
+  </div>
+  <!--  -->
 
   <?php include "header.php"; ?>
 
