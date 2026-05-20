@@ -1898,7 +1898,7 @@ textarea:focus {
 }
 
 #preloader img {
-  width: 180px;
+  width: 300px;
   max-width: 55vw;
   opacity: 0;
   transform: translateY(10px);
