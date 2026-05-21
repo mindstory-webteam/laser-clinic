@@ -124,6 +124,8 @@ function showError(message) {
 //   setTimeout(hide, 2500);
 // })();
 // PRELOADER — only on first load / reload, not page transitions
+
+
 (function () {
   const loader = document.getElementById('preloader');
   if (!loader) return;
