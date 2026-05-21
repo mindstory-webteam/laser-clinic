@@ -128,35 +128,60 @@ function showError(message) {
   const loader = document.getElementById('preloader');
   if (!loader) return;
 
-  // If navigating via back/forward or internal link, skip preloader
+  // Skip on page transitions
   const navEntry = performance.getEntriesByType('navigation')[0];
   const isReload = navEntry ? navEntry.type === 'reload' || navEntry.type === 'navigate' : true;
 
-  if (!isReload) {
-    loader.remove();
-    return;
-  }
+  if (!isReload) { loader.remove(); return; }
 
-  // Check if already visited this session
-  if (sessionStorage.getItem('visited')) {
-    loader.remove();
-    return;
-  }
+  // Skip if already visited this session
+  if (sessionStorage.getItem('visited')) { loader.remove(); return; }
 
   sessionStorage.setItem('visited', '1');
   document.body.style.overflow = 'hidden';
 
+  let hidden = false;
   function hide() {
+    if (hidden) return;
+    hidden = true;
     loader.classList.add('hide');
     document.body.style.overflow = '';
     setTimeout(() => loader.remove(), 800);
   }
 
-  if (document.readyState !== 'loading') {
-    setTimeout(hide, 1000);
-  } else {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(hide, 1000));
+  // Wait for ALL images to load
+  function checkImages() {
+    const images = Array.from(document.querySelectorAll('img'));
+    if (images.length === 0) return Promise.resolve();
+    return Promise.all(
+      images.map(img =>
+        img.complete ? Promise.resolve() :
+        new Promise(resolve => {
+          img.addEventListener('load', resolve);
+          img.addEventListener('error', resolve); // don't block on broken images
+        })
+      )
+    );
   }
 
-  setTimeout(hide, 2500);
+  // Wait for fonts
+  function checkFonts() {
+    return document.fonts ? document.fonts.ready : Promise.resolve();
+  }
+
+  // Run after DOM is ready
+  function init() {
+    Promise.all([checkImages(), checkFonts()])
+      .then(hide)
+      .catch(hide); // hide even if something fails
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  // Hard fallback — never stuck beyond 4s
+  setTimeout(hide, 4000);
 })();
