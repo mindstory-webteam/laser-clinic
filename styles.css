@@ -599,7 +599,7 @@ p {
   margin-top: 20px;
   padding-top: 18px;
   border-top: 1px solid rgba(234, 223, 236, .95);
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: .12em;
   color: var(--mauve);
@@ -2076,14 +2076,14 @@ textarea:focus {
 }
 
 .svc-face-back ul li {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.8;
   color: rgba(45, 24, 49, .78);
 }
 
 .mini-title {
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   color: #2d1831;
   margin: 6px 0 8px;
@@ -2164,7 +2164,7 @@ textarea:focus {
   }
 
   .svc-face-back ul li {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.75;
   }
 }
