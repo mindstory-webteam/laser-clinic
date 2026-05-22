@@ -1968,6 +1968,7 @@ textarea:focus {
 .svc-flip-cell {
   perspective: 1200px;
   height: 360px;
+  cursor: pointer;
 }
 
 .svc-flip-inner {

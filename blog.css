@@ -9,7 +9,7 @@
 
 .blog-banner span,
 .blog-detail-banner span {
-  color: rgba(255,255,255,.78);
+  color: rgba(255, 255, 255, .78);
   text-transform: uppercase;
   letter-spacing: .18em;
   font-size: 12px;
@@ -27,7 +27,7 @@
 
 .blog-banner p,
 .blog-detail-banner p {
-  color: rgba(255,255,255,.86);
+  color: rgba(255, 255, 255, .86);
   max-width: 720px;
   margin: 18px auto 0;
 }
