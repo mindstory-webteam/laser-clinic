@@ -1919,3 +1919,252 @@ textarea:focus {
     transform: translateY(0);
   }
 }
+
+/* treatments section new style */
+
+.section-kicker {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: #8b5d7a;
+  margin-bottom: 14px;
+}
+
+
+.svc-grid-scene {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(58, 29, 60, .12);
+}
+
+.svc-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('assets/images/home-page-banner.webp');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.45);
+}
+
+.svc-grid-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg,
+      rgba(35, 16, 36, .75),
+      rgba(79, 43, 83, .45));
+}
+
+/* Grid */
+
+.svc-flip-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, .08);
+}
+
+.svc-flip-cell {
+  perspective: 1200px;
+  height: 320px;
+}
+
+.svc-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform .8s cubic-bezier(.4, .2, .2, 1);
+  transform-style: preserve-3d;
+}
+
+.svc-flip-cell:hover .svc-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.svc-face {
+  position: absolute;
+  inset: 0;
+  padding: 34px 30px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Front */
+
+.svc-face-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, .04);
+  backdrop-filter: blur(2px);
+}
+
+.svc-face-front h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin: 22px 0 14px;
+}
+
+.svc-face-front p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, .72);
+  max-width: 260px;
+}
+
+/* Icon */
+
+.svc-face-icon {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3d1f42;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+}
+
+.svc-face-icon svg {
+  width: 34px;
+  height: 34px;
+  stroke-width: 1.6;
+}
+
+/* Back */
+
+.svc-face-back {
+  transform: rotateY(180deg);
+  background:
+    linear-gradient(145deg,
+      #f7ede4,
+      #ecd8c4);
+  display: flex;
+  flex-direction: column;
+}
+
+.svc-back-kicker {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #8b5d7a;
+  margin-bottom: 10px;
+}
+
+.svc-face-back h3 {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #2d1831;
+  margin-bottom: 18px;
+}
+
+.svc-face-back ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.svc-face-back ul li {
+  font-size: 14px;
+  line-height: 1.9;
+  color: rgba(45, 24, 49, .78);
+}
+
+.svc-back-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #2d1831;
+  padding-top: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+  .section-heading h2 {
+    font-size: 40px;
+  }
+
+  .svc-flip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .svc-flip-cell {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .services-section {
+    padding: 80px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .section-heading p {
+    font-size: 14px;
+  }
+
+  .svc-grid-scene {
+    border-radius: 24px;
+  }
+
+  .svc-flip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .svc-flip-cell {
+    height: 270px;
+  }
+
+  .svc-face {
+    padding: 24px;
+  }
+
+  .svc-face-front h3 {
+    font-size: 20px;
+  }
+
+  .svc-face-back h3 {
+    font-size: 24px;
+  }
+
+  .svc-face-back ul li {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .svc-face-icon {
+    width: 74px;
+    height: 74px;
+  }
+
+  .svc-face-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}

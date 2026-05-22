@@ -103,29 +103,6 @@ function showError(message) {
   if (error) error.textContent = message;
 }
 
-
-// (function () {
-//   const loader = document.getElementById('preloader');
-//   if (!loader) return;
-//   document.body.style.overflow = 'hidden';
-
-//   function hide() {
-//     loader.classList.add('hide');
-//     document.body.style.overflow = '';
-//     setTimeout(() => loader.remove(), 800);
-//   }
-
-//   if (document.readyState !== 'loading') {
-//     setTimeout(hide, 1000);
-//   } else {
-//     document.addEventListener('DOMContentLoaded', () => setTimeout(hide, 1000));
-//   }
-
-//   setTimeout(hide, 2500);
-// })();
-// PRELOADER — only on first load / reload, not page transitions
-
-
 (function () {
   const loader = document.getElementById('preloader');
   if (!loader) return;
@@ -158,10 +135,10 @@ function showError(message) {
     return Promise.all(
       images.map(img =>
         img.complete ? Promise.resolve() :
-        new Promise(resolve => {
-          img.addEventListener('load', resolve);
-          img.addEventListener('error', resolve); // don't block on broken images
-        })
+          new Promise(resolve => {
+            img.addEventListener('load', resolve);
+            img.addEventListener('error', resolve); // don't block on broken images
+          })
       )
     );
   }
