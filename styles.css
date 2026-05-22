@@ -1922,20 +1922,17 @@ textarea:focus {
 
 /* treatments section new style */
 
-.section-kicker {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .25em;
-  text-transform: uppercase;
-  color: #8b5d7a;
-  margin-bottom: 14px;
+.services-section {
+  padding: 110px 0;
+  background: #faf7fb;
+  overflow: hidden;
 }
 
+/* GRID */
 
 .svc-grid-scene {
   position: relative;
-  border-radius: 32px;
+  border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 30px 80px rgba(58, 29, 60, .12);
 }
@@ -1946,7 +1943,7 @@ textarea:focus {
   background-image: url('assets/images/home-page-banner.webp');
   background-size: cover;
   background-position: center;
-  filter: brightness(.45);
+  filter: brightness(.42);
 }
 
 .svc-grid-bg::after {
@@ -1955,11 +1952,9 @@ textarea:focus {
   inset: 0;
   background:
     linear-gradient(135deg,
-      rgba(35, 16, 36, .75),
-      rgba(79, 43, 83, .45));
+      rgba(31, 12, 33, .82),
+      rgba(71, 39, 73, .48));
 }
-
-/* Grid */
 
 .svc-flip-grid {
   position: relative;
@@ -1972,7 +1967,7 @@ textarea:focus {
 
 .svc-flip-cell {
   perspective: 1200px;
-  height: 320px;
+  height: 360px;
 }
 
 .svc-flip-inner {
@@ -1995,7 +1990,7 @@ textarea:focus {
   -webkit-backface-visibility: hidden;
 }
 
-/* Front */
+/* FRONT */
 
 .svc-face-front {
   display: flex;
@@ -2016,12 +2011,12 @@ textarea:focus {
 
 .svc-face-front p {
   font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, .72);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, .74);
   max-width: 260px;
 }
 
-/* Icon */
+/* ICON */
 
 .svc-face-icon {
   width: 86px;
@@ -2041,13 +2036,15 @@ textarea:focus {
   stroke-width: 1.6;
 }
 
-/* Back */
+/* BACK */
 
 .svc-face-back {
   transform: rotateY(180deg);
   background: var(--gradient-card);
+
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .svc-back-kicker {
@@ -2060,40 +2057,45 @@ textarea:focus {
 }
 
 .svc-face-back h3 {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.2;
   color: #2d1831;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
+}
+
+.svc-face-back p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(45, 24, 49, .74);
+  margin-bottom: 14px;
 }
 
 .svc-face-back ul {
   padding-left: 18px;
-  margin: 0;
+  margin-bottom: 14px;
 }
 
 .svc-face-back ul li {
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: 13px;
+  line-height: 1.8;
   color: rgba(45, 24, 49, .78);
 }
 
-.svc-back-link {
-  margin-top: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  font-size: 11px;
+.mini-title {
+  display: block;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: .18em;
-  text-transform: uppercase;
   color: #2d1831;
-  padding-top: 20px;
+  margin: 6px 0 8px;
 }
 
-/* Responsive */
+/* TABLET */
 
 @media (max-width: 991px) {
+
+  .services-section {
+    padding: 90px 0;
+  }
 
   .section-heading h2 {
     font-size: 40px;
@@ -2104,14 +2106,32 @@ textarea:focus {
   }
 
   .svc-flip-cell {
-    height: 300px;
+    height: auto;
+    perspective: none;
+  }
+
+  .svc-flip-inner {
+    transform: none !important;
+  }
+
+  .svc-face-front {
+    display: none;
+  }
+
+  .svc-face-back {
+    position: relative;
+    inset: unset;
+    transform: none;
+    min-height: 100%;
   }
 }
+
+/* MOBILE */
 
 @media (max-width: 767px) {
 
   .services-section {
-    padding: 80px 0;
+    padding: 75px 0;
   }
 
   .section-heading {
@@ -2124,44 +2144,27 @@ textarea:focus {
 
   .section-heading p {
     font-size: 14px;
+    line-height: 1.7;
   }
 
   .svc-grid-scene {
-    border-radius: 24px;
+    border-radius: 22px;
   }
 
   .svc-flip-grid {
     grid-template-columns: 1fr;
   }
 
-  .svc-flip-cell {
-    height: 270px;
-  }
-
   .svc-face {
-    padding: 24px;
-  }
-
-  .svc-face-front h3 {
-    font-size: 20px;
+    padding: 26px 22px;
   }
 
   .svc-face-back h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .svc-face-back ul li {
     font-size: 13px;
-    line-height: 1.7;
-  }
-
-  .svc-face-icon {
-    width: 74px;
-    height: 74px;
-  }
-
-  .svc-face-icon svg {
-    width: 28px;
-    height: 28px;
+    line-height: 1.75;
   }
 }
