@@ -1840,7 +1840,8 @@ textarea:focus {
   .pinned-treatment-stack {
     gap: 24px;
   }
-  ..card-info-grid li{
+
+  ..card-info-grid li {
     font-size: 13px;
   }
 
@@ -1881,6 +1882,19 @@ textarea:focus {
 
   .card-info-grid>div {
     padding: 15px;
+  }
+
+  .blog-card-content {
+    padding: 15px;
+  }
+
+  .blog-card-content h3 {
+    font-size: 18px;
+  }
+
+  .blog-content h2 {
+    font-size: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -2172,7 +2186,8 @@ textarea:focus {
     object-fit: cover;
     border-radius: 50%;
   }
-  .treatment-intro-card{
+
+  .treatment-intro-card {
     gap: 10px
   }
 }
