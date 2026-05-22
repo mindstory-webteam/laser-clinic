@@ -2067,7 +2067,7 @@ textarea:focus {
   font-size: 13px;
   line-height: 1.7;
   color: rgba(45, 24, 49, .74);
-  margin-bottom: 14px;
+  margin: 0 !important;
 }
 
 .svc-face-back ul {
