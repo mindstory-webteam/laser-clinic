@@ -2007,12 +2007,12 @@ textarea:focus {
   font-size: 22px;
   font-weight: 600;
   color: #fff;
-  margin: 22px 0 14px;
+  margin: 22px 0 0;
 }
 
 .svc-face-front p {
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 17px;
+  line-height: 1.5;
   color: rgba(255, 255, 255, .74);
   max-width: 260px;
 }
@@ -2031,11 +2031,15 @@ textarea:focus {
   box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
 }
 
-.svc-face-icon svg {
+.svc-face-icon img {
+  object-fit: contain;
+}
+
+/* .svc-face-icon svg {
   width: 34px;
   height: 34px;
   stroke-width: 1.6;
-}
+} */
 
 /* BACK */
 
