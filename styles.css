@@ -2045,10 +2045,7 @@ textarea:focus {
 
 .svc-face-back {
   transform: rotateY(180deg);
-  background:
-    linear-gradient(145deg,
-      #f7ede4,
-      #ecd8c4);
+  background: var(--gradient-card);
   display: flex;
   flex-direction: column;
 }
