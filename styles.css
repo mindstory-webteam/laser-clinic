@@ -1107,7 +1107,9 @@ textarea:focus {
 
   .popular-treatment-section .focus-card {
     padding: 10px !important;
-    min-height: auto !important;
+    min-height: 168px !important;
+    justify-content: center;
+    min-width: 50%;
   }
 
   .popular-treatment-section .focus-card p {
