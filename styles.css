@@ -1101,6 +1101,33 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
+  .popular-treatment-section .card-grid.three {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .popular-treatment-section .focus-card {
+    padding: 10px !important;
+    min-height: auto !important;
+  }
+
+  .popular-treatment-section .focus-card p {
+    display: none !important;
+  }
+
+  .popular-treatment-section .focus-card h3 {
+    font-size: 14px !important;
+  }
+
+  .svc-face-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .svc-face-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
   .section {
     padding: 54px 0;
   }
@@ -2203,7 +2230,7 @@ textarea:focus {
   .svc-face-icon img {
     width: 78px;
     height: 78px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 50%;
   }
 
