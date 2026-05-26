@@ -397,7 +397,7 @@ p {
 }
 
 .section.about-clinic-section {
-  padding: 0 !important;
+  padding: 0 0 70px 0 !important;
 }
 
 .soft-bg {
@@ -1063,6 +1063,10 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
+  .section.about-clinic-section {
+    padding: 0 0 40px 0 !important;
+  }
+
   .container {
     width: min(100% - 30px, 1180px);
   }
@@ -2208,21 +2212,23 @@ textarea:focus {
   }
 }
 
-.popular-treatment-section{
-    background:
-    radial-gradient(circle at top right, rgba(214,63,164,0.25), transparent 25%),
+.popular-treatment-section {
+  background:
+    radial-gradient(circle at top right, rgba(214, 63, 164, 0.25), transparent 25%),
     linear-gradient(135deg, #2B0F35 0%, #4A1E52 45%, #6A1F5C 100%);
 }
-.focus-card{
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
+
+.focus-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
+
 .popular-treatment-section h2,
-.popular-treatment-section h3{
-    color: #fff;
+.popular-treatment-section h3 {
+  color: #fff;
 }
 
 .popular-treatment-section p,
-.popular-treatment-section span{
-    color: rgba(255,255,255,0.75);
+.popular-treatment-section span {
+  color: rgba(255, 255, 255, 0.75);
 }
