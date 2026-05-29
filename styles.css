@@ -313,7 +313,7 @@ p {
   content: "";
   position: absolute;
   inset: -18px;
-  background: var(--gradient-cta);
+  /* background: var(--gradient-cta); */
   filter: blur(28px);
   opacity: .3;
 }
