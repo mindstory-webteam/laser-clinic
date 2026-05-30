@@ -1,3 +1,6 @@
+# Custom error pages
+ErrorDocument 404 /404.php
+
 RewriteEngine On
 
 # Force HTTPS
