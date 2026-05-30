@@ -99,54 +99,6 @@
     .error-actions .btn {
       min-width: 160px;
     }
-
-    /* Quick links */
-    .error-links {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 1rem;
-      padding: 1.25rem 1.5rem;
-      box-shadow: var(--shadow-card);
-    }
-    .error-links-title {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 0.875rem;
-    }
-    .error-links-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.5rem;
-      list-style: none;
-    }
-    @media (min-width: 400px) {
-      .error-links-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-    .error-links-grid a {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.5rem 0.625rem;
-      border-radius: 0.5rem;
-      font-size: 0.875rem;
-      color: var(--deep);
-      font-weight: 500;
-      text-decoration: none;
-      transition: background 0.2s, color 0.2s;
-    }
-    .error-links-grid a:hover {
-      background: var(--lavender);
-      color: var(--mauve);
-    }
-    .error-links-grid a svg {
-      width: 0.875rem;
-      height: 0.875rem;
-      flex-shrink: 0;
-      color: var(--lilac);
-    }
   </style>
 </head>
 <body class="error-page">
@@ -194,70 +146,6 @@
         </a>
       </div>
 
-      <div class="error-links">
-        <p class="error-links-title">Quick links</p>
-        <ul class="error-links-grid">
-          <li>
-            <a href="/">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-              </svg>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/treatments">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/>
-              </svg>
-              Treatments
-            </a>
-          </li>
-          <li>
-            <a href="/blogs">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="/?scroll=about">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="8" r="4"/>
-                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-              </svg>
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/?scroll=doctor">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 2v4"/><path d="M16 2v4"/>
-                <rect x="3" y="4" width="18" height="18" rx="2"/>
-                <path d="M3 10h18"/>
-                <path d="M12 14v4"/><path d="M10 16h4"/>
-              </svg>
-              Doctor
-            </a>
-          </li>
-          <li>
-            <a href="/?scroll=contact">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.62 4.47 2 2 0 0 1 3.6 2.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
 
     </div>
   </main>
