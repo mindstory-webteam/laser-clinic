@@ -103,64 +103,107 @@ function showError(message) {
   if (error) error.textContent = message;
 }
 
+// (function () {
+
+//   const loader = document.getElementById('preloader');
+//   if (!loader) return;
+
+//   // Skip on page transitions
+//   const navEntry = performance.getEntriesByType('navigation')[0];
+//   const isReload = navEntry ? navEntry.type === 'reload' || navEntry.type === 'navigate' : true;
+
+//   if (!isReload) { loader.remove(); return; }
+
+//   // Skip if already visited this session
+//   if (sessionStorage.getItem('visited')) { loader.remove(); return; }
+
+//   sessionStorage.setItem('visited', '1');
+//   document.body.style.overflow = 'hidden';
+
+//   let hidden = false;
+//   function hide() {
+//     if (hidden) return;
+//     hidden = true;
+//     loader.classList.add('hide');
+//     document.body.style.overflow = '';
+//     setTimeout(() => loader.remove(), 800);
+//   }
+
+//   // Wait for ALL images to load
+//   function checkImages() {
+//     const images = Array.from(document.querySelectorAll('img'));
+//     if (images.length === 0) return Promise.resolve();
+//     return Promise.all(
+//       images.map(img =>
+//         img.complete ? Promise.resolve() :
+//           new Promise(resolve => {
+//             img.addEventListener('load', resolve);
+//             img.addEventListener('error', resolve); // don't block on broken images
+//           })
+//       )
+//     );
+//   }
+
+//   // Wait for fonts
+//   function checkFonts() {
+//     return document.fonts ? document.fonts.ready : Promise.resolve();
+//   }
+
+//   // Run after DOM is ready
+//   function init() {
+//     Promise.all([checkImages(), checkFonts()])
+//       .then(hide)
+//       .catch(hide); // hide even if something fails
+//   }
+
+//   if (document.readyState === 'loading') {
+//     document.addEventListener('DOMContentLoaded', init);
+//   } else {
+//     init();
+//   }
+
+//   // Hard fallback — never stuck beyond 4s
+//   setTimeout(hide, 4000);
+// })();
+
 (function () {
   const loader = document.getElementById('preloader');
   if (!loader) return;
 
-  // Skip on page transitions
-  const navEntry = performance.getEntriesByType('navigation')[0];
-  const isReload = navEntry ? navEntry.type === 'reload' || navEntry.type === 'navigate' : true;
-
-  if (!isReload) { loader.remove(); return; }
-
-  // Skip if already visited this session
-  if (sessionStorage.getItem('visited')) { loader.remove(); return; }
+  // Skip if already visited during this session
+  if (sessionStorage.getItem('visited')) {
+    loader.remove();
+    return;
+  }
 
   sessionStorage.setItem('visited', '1');
   document.body.style.overflow = 'hidden';
 
   let hidden = false;
+
   function hide() {
     if (hidden) return;
     hidden = true;
+
     loader.classList.add('hide');
     document.body.style.overflow = '';
-    setTimeout(() => loader.remove(), 800);
+
+    setTimeout(() => {
+      loader.remove();
+    }, 500);
   }
 
-  // Wait for ALL images to load
-  function checkImages() {
-    const images = Array.from(document.querySelectorAll('img'));
-    if (images.length === 0) return Promise.resolve();
-    return Promise.all(
-      images.map(img =>
-        img.complete ? Promise.resolve() :
-          new Promise(resolve => {
-            img.addEventListener('load', resolve);
-            img.addEventListener('error', resolve); // don't block on broken images
-          })
-      )
-    );
-  }
-
-  // Wait for fonts
-  function checkFonts() {
-    return document.fonts ? document.fonts.ready : Promise.resolve();
-  }
-
-  // Run after DOM is ready
+  // Show preloader briefly after page load
   function init() {
-    Promise.all([checkImages(), checkFonts()])
-      .then(hide)
-      .catch(hide); // hide even if something fails
+    setTimeout(hide, 2000);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
+  if (document.readyState === 'complete') {
     init();
+  } else {
+    window.addEventListener('load', init);
   }
 
-  // Hard fallback — never stuck beyond 4s
-  setTimeout(hide, 4000);
+  // Emergency fallback
+  setTimeout(hide, 1200);
 })();
