@@ -2261,3 +2261,36 @@ textarea:focus {
 .popular-treatment-section span {
   color: rgba(255, 255, 255, 0.75);
 }
+
+.footer-image-sb img {
+  height: auto;
+  width: 90px;
+  object-fit: contain;
+}
+
+.footer-image-sb {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer-image-sb p {
+  margin: 0;
+}
+.footer-image-sb a {
+  height: max-content;
+  margin: 0;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

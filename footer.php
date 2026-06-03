@@ -25,9 +25,13 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <p><em>Treatment results may vary from person to person. Consultation with the doctor is required before starting
-          any procedure.</em></p>
+      <!-- <p><em>Treatment results may vary from person to person. Consultation with the doctor is required before starting
+          any procedure.</em></p> -->
       <p>© <span id="year"></span> Laser Skin Hair & Cosmetic Clinic. All rights reserved.</p>
+      <span class="footer-image-sb">
+          <p>Designed By</p><a href="https://mpxcode.com/" target="_blank"><img src="assets/images/mindpixel.webp"
+              alt="mindpixel" width="180" height="180" /></a>
+        </span>
     </div>
   </footer>
    <a class="floating-whatsapp"
